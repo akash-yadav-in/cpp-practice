@@ -29,6 +29,27 @@ int main (){
 
 
 
+    int a = 8, b = 5 , c = 6;
+    cout<< "If a == b = "<<( a==b)<<endl;
+    cout<< "If a != b = "<<( a!=b)<<endl;
+    cout<< "If a >= b = "<<( a>=b)<<endl;
+    cout<< "If a <= b = "<<( a<=b)<<endl;
+    cout<< "If a > b = "<<( a>b)<<endl;
+    cout<< "If a < b = "<<( a<b)<<endl;
+    cout<< "If a == (b/c) = "<<( a == (b/c))<<endl;
+    cout<< "If a >= (b+c) = "<<( a >= (b*c))<<endl;
+    cout<< "If a <= (b*c) = "<<( a <= (b*c))<<endl;
+    cout<< "If a > (b-c) = "<<( a > (b-c))<<endl;
+
+
+    cout<< "If (a == b/c) and (a==b) = "<<(( a == (b/c)) && (a==b))<<endl;
+    cout<< "If (a <= b/c) and (a>=b) = "<<(( a <= (b/c)) && (a>=b))<<endl;
+
+
+    
+
+
+
 
 
     return 0;
