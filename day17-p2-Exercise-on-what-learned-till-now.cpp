@@ -1,5 +1,7 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
+#define PI 3.14159265
 
 // Exercise ----- On What Learned Till Now
 
@@ -74,6 +76,44 @@ int Simple_Calculator ::Calculation_Choice(void)
     }
 }
 
+class ScientificCal
+{
+    int k, l;
+
+public:
+    void input()
+    {
+        cout << "Enter the First Number " << endl;
+        cin >> k;
+        cout << "Enter the Second Number " << endl;
+        cin >> l;
+    }
+
+    void Opertations(void)
+    {
+        cout << "The value of sin" << (k + l) << " degrees is " << sin((PI * (k + l)) / 180) << endl;
+        cout << "The value of cos" << (k + l) << " degrees is " << cos((PI * (k + l)) / 180) << endl;
+        cout << "The value of tan" << (k + l) << " degrees is " << tan((PI * (k + l)) / 180) << endl;
+        cout << "The value of exp" << (k + l) << " is " << exp(k + l) << endl;
+    }
+};
+
+class Hybrid_Cal : public Simple_Calculator, public ScientificCal
+{
+public:
+    void Result_Display()
+    {
+
+        Simple_Calculator ::choice();
+        Simple_Calculator ::choiceStore();
+        Simple_Calculator ::Calculation_Choice();
+        Simple_Calculator ::result();
+
+        ScientificCal ::input();
+        ScientificCal ::Opertations();
+    }
+};
+
 int main()
 {
     Simple_Calculator x;
@@ -82,6 +122,13 @@ int main()
     x.choiceStore();
     x.Calculation_Choice();
     x.result();
+
+    ScientificCal v;
+    v.input();
+    v.Opertations();
+
+    Hybrid_Cal j;
+    j.Result_Display();
 
     return 0;
 }
