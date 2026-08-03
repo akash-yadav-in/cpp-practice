@@ -8,13 +8,13 @@ using namespace std;
 
  class B : public A{
  // Order Of execution of we made constructor in both class A and B will be
- First Base class that is A will execute then B class that is derived one
+---->  First Base class that is A will execute then B class that is derived one
 
  };
 
  CASE 2:
- class A : public B, public C{
- // Order of execution of   constructor --> B() THEN C() AND THEN A()
+-----> class A : public B, public C{
+ // Order of execution of   constructor --> B() THEN C() AND THEN A()  as both B and C are base class And B is written first that's why it is called first before C
 
  };
 
@@ -66,7 +66,7 @@ class derived : public base, public base2
 public:
     // below is SYNTAX FOR HOW to call the base and base 2 constructor in derived class
     
-    derived(int a, int b, int c, int d) : base(a), base2(b)
+    derived(int a, int b, int c, int d) : base(a), base2(b)  // Here if we reverse what i mean to sat is this if i run public base2(a) , public base(b) ----> then also base class will have is constructor runed first also we havent change the order when we wrote class derived ------: public base and base 2 here
     {
         derived1 = c;
         derived2 = d;
@@ -74,8 +74,8 @@ public:
     }
     void print()
     {
-         base ::print1(); 
-         base2 ::print2();
+         base ::print1();  // Here we have declare the print of base and 
+         base2 ::print2(); // base 2 below so that their print function runs runs and then derived print function run.
         cout << "The value of derived1 is " << derived1 << endl;
         cout << "The value of derived2 is " << derived2 << endl;
     }
