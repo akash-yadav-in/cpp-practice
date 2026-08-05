@@ -35,7 +35,12 @@ int main()
 
     // another way also below
 
-    Complex *p = new Complex;
+    Complex *p = new Complex;  // This syntax used here can make new Objects
+
+    // Complex *p = new Complex[4]; ----> And this one make 4 new objects
+
+
+   
 
     // Here we have derefrenced it
     (*p).setData(2, 3);
