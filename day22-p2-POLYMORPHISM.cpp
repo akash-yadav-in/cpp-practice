@@ -10,9 +10,10 @@ using namespace std;
                                         |
                                         |
                                         |
-       RUNTIME POLYMORPH <----|---------------------|---> COMPILETIME POLYMORPH
+       RUNTIME POLYMORPH <----|----------------------------------|---> COMPILETIME POLYMORPH
               |                                                  |
-              |---->   Virutal functions                         |----> FUNCTION OVERLOADING
+                                                                 achieveed using below 
+              |----> achieved using   Virutal functions          |----> FUNCTION OVERLOADING
                                                                  
                                                                  |----> OPERATOR OVERLOADING
 
