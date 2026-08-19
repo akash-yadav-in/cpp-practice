@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int minOf2nums(int a, int b)
+int minOf2nums(int a, int b)  // Paramenter are int a , int b
 {
     if (a > b)
     {
@@ -16,6 +16,6 @@ int minOf2nums(int a, int b)
 
 int main()
 {
-    minOf2nums(23, 66);
+    minOf2nums(23, 66); // 23 and 66 are referred are argumnets passed
     return 0;
 }
