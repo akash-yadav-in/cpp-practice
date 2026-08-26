@@ -27,7 +27,7 @@ int main()
 
         maxsum = max(sum, maxsum); // Here we have taked max sum to be -ve infinty so that any sum which is positive will automatically be biggest value from the two we are comparing
         if (sum < 0)               // This is the main logic when the loop runs for the first time the sum = 3 then when it run for i=1 then it result in sum = 3 + arr[i] == -1 and since if sum is -ve we reset it to zero so that when the next positive value occur it will less the its actual value if the -ve was not added so we are resetting the -ve to 0 so that o should add with the next positive value and result in max sum
-        {
+        {                          // Here one more thing we have placed this reset sum below max sum because let's say if all the elements of the array is - ve then if this condition was above max sum then it will not display the max -ve sum as it was reset earlier but if we place this below the max sum then this will also display the -ve maxsub array sum 
             sum = 0;
         }
     }
