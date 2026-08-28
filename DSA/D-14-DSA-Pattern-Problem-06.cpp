@@ -1,3 +1,5 @@
+#include<iostream>
+using namespace std;
 /*
 *************** What to achive in this pattern ********************
                             12345
@@ -22,3 +24,11 @@ public:
     }
 };
 
+
+
+int main(){
+    Solution c;
+    c.pattern6(5);
+    return 0;
+
+}
