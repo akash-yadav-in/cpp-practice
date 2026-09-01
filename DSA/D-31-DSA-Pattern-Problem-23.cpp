@@ -21,8 +21,8 @@ public:
     void pattern22(int n)
     {
 
-        for (int i = 0; i < 2*n-1; i++)
-        {
+        for (int i = 0; i < 2*n-1; i++) // This outer loop is running for 2*n-1 that is we want it to run for 7 times in this case
+        { 
          
           for (int j = 0; j < 2*n-1; j++)
           {
