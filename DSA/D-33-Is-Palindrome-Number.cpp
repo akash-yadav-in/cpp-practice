@@ -1,3 +1,6 @@
+#include<iostream>
+using namespace std;
+
 /*
 ---------------    What to achieve -------------
 if we are given say a number 121 we are extracting the numbers and checking wherther when we read it from left to right does it exactly remin same as the original number or not 
@@ -6,10 +9,6 @@ if not it is not a pllindrome
 
 
 */
-
-
-#include<iostream>
-using namespace std;
 
 
 class Solution {
