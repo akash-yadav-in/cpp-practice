@@ -12,14 +12,14 @@ class Solution {
 public:
     int reverseNumber(int n) {
         int s = 0;
-        int power = 1;
+        
         int reversed = 0;
                
         while (n > 0)
         {
            s = n%10;
          
-           reversed = reversed*10 +s;   // IMP logic for reversing digits
+           reversed = reversed*10 +s;   // IMP logic for reversing digits what we are doing here is that intially reversed == 0 so it will take the first reved digit and from then next onward the first one will be multiplied with 10 and add to next extracted digits
            
           n = n/10;
         }
