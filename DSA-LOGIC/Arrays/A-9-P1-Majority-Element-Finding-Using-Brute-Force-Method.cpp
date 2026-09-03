@@ -5,7 +5,7 @@
     So if we are Gievn any array say arr = {1 , 2, 2, 1, 1}
     and we need to find he max occuring element or Majority element
 
-    1--- Here we have done it using the BRUTE FORCE APPROACH BUT THIS IS NOT BEST As Time Complexity here is O(n^20)
+    1--- Here we have done it using the BRUTE FORCE APPROACH BUT THIS IS NOT BEST As Time Complexity here is O(n^2)
     
 
 */
