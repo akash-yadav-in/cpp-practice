@@ -21,24 +21,24 @@ void Majority_Optimised_Approach(vector<int> &arr)
 
     // ----> Now counting Frequency
 
-    int ans = arr[0];
+    int ans = arr[0]; // Initially we have defined int ans = value at arr[0].
 
-    int frequency = 1;
+    int frequency = 1; // and defined frequency = 1.
 
-    for (int i = 1; i < arr.size(); i++)
+    for (int i = 1; i < arr.size(); i++) // this outer loop is running from 1 to last element of arr
     {
 
-        if (arr[i] == arr[i - 1])
+        if (arr[i] == arr[i - 1]) // this if condition is checking whether value at arr[i] == value at arr[i-1] means that is the next value equals to its previous value or not
         {
-            frequency++;
+            frequency++;          // if yes then frequency ko +1 se inc kar do 
         }
         else
         {
-            frequency = 1;
+            frequency = 1;      // else frequncy ko reset to 1 kardo and ans ko reset karke jis i index per arr[i] li value hai wo kardo
             ans = arr[i];
         }
 
-        if (frequency > arr.size() / 2)
+        if (frequency > arr.size() / 2)   // this one is for checking ki agar frequncy ki value half se jayada hua than it will defenitely be a majoritly elemnent
         {
             cout << ans;
         }
