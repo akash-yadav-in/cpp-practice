@@ -11,7 +11,7 @@ NOTE:----> BUYING AND SELLING DAY HAS TO BE DIFFERENT IT CANNOT BE THE SAME DAY
 AND SELLING DAY WILL ALWAYs HAVE TO BE IN FUTURE.
 Also we have to return 0 is max profit cannot be achieved like buying at max price and selling at least price
 
-APPRAOACH HERE IS TO IMAGINE EVERY DAY IS A SELLING DAY
+APPRAOACH IS THAT WE HAVE TO IMAGEINE EVERY DAY AS A SELLING DAY !!!
 */
 
 void max_profit(vector<int> & prices){
