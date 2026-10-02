@@ -8,7 +8,7 @@ so here we will be given an array and we have to find the target number in that 
 
 ------ Approach
   here we are going to play it with mid game like we will find the middle of the array and search for where the target exist in left or right ans then we will make  the recursive call
- IMPORTANT NOTE THAT WHILE USING THIS METHOD THE ARRAY MUST BE SORTED OR IN ASCENDING ORDER
+ IMPORTANT NOTE THAT WHILE USING THIS METHOD THE ARRAY MUST BE FIRST SORTED OR IN ASCENDING ORDER
 
 */
 
