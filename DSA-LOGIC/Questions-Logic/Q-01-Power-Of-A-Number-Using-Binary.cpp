@@ -15,7 +15,7 @@ example if we have to calculate 3^5 we find first the binary form of 5 that is 1
 void number_power(int x, int n)
 { // Here we have taken the number whose poer is to be calculated here in this case is 3 and that is stored in int x , second thing we have store ki kitne tak power calculate in int n that is 10 here
     int binform = n;
-    int ans = 1; // this is the mainframework that is and and we have defined it for ans =1;
+    int ans = 1; // this is the main frame of starting and here we have deifnied the value of ans = 1.
 
     if (binform < 0)
     {
