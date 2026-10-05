@@ -26,5 +26,13 @@ int main()
 
     cout << "The value of vector at index 1--> " << vec.at(1) << endl; // This here will print the element of the vector at positin (2)
 
+
+    /*
+    ---------------- ONE IMPORTANT THING TO NOTE IS THAT------------------------
+    WHEN WE HAVE PERFORMED CERTIAN OPERATION ON ONE VECTOR AND WE WANT TO STORE THE RESULT OF THIS OPERATION ON ANOTHER VECTOR WE DO IT 
+    BY INITALIZING A NEW VECTOR AND THEN PUSH BACK INTO ANOTHER VECTOR  
+
+    */
+
         return 0;
 }
