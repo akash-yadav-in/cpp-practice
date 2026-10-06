@@ -1,5 +1,10 @@
 #include<iostream>
 using namespace std;
+/*
+-------------- What to achive in this problem is that 
+we have to count the number of odd digits in the array given we do so by checking that if that umber is divible by 2 will be even and if that is not divisivle will be odd number 
+
+*/
 class Solution{
 public:
     int countOdd(int arr[], int n)
