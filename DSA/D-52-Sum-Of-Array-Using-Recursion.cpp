@@ -1,6 +1,11 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+/*
+====== What to achive in this problem is that we have to solve the problem of suming of all the element of the array without using the loop we have to use recurssion to solve it 
+
+
+*/
 
 
 class Solution{	
