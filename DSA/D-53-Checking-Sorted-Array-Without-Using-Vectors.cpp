@@ -1,6 +1,11 @@
 #include<iostream>
 using namespace std;
 class Solution {
+/*
+------------ What to achive we have to chcek that whther the array is sorted or not without using the vector 
+
+
+*/
 public:
     bool arraySortedOrNot(int arr[], int n) 
     {
