@@ -1,38 +1,30 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using namespace std;
-
-class Solution{
+// Time Complexity is O(n)
+class Solution
+{
 public:
     int search(vector<int> &nums, int target)
     {
-        int size = nums.size();
-        
-        for (int i = 0; i < size; i++)
+        int n = nums.size();
+        for (int i = 0; i < n; i++)
         {
-            
-            if (nums[i]==target)
+            if (target == nums[i])
             {
-               cout<<i;
-               break;
+                return i;
             }
-            if (nums[size-1]!=target)
-            {
-                cout<<-1;
-                break;
-            }
-            
-            
         }
-
-        
+        return -1;
     }
 };
 
-int main(){
-    vector<int> nums = {-1 , 0 , 3 , 5 , 9 , 12};
+int main()
+{
+    vector<int> nums = {1, 3, -1, 9, 12};
+
     Solution c;
-    c.search(nums ,  2 );
-   
-return 0;
+    cout << c.search(nums, 0);
+
+    return 0;
 }
