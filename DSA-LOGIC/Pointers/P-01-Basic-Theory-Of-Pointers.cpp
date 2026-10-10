@@ -14,7 +14,7 @@ IMPORTANT things to note
 
 int main(){
     // This is Basic Pointer Example
-    int a = 10
+    int a = 10;
     int* ptr0 = &a;
     cout<<"1--> The value of the address of a is "<<"  "<<ptr0<<endl<<endl;
 
